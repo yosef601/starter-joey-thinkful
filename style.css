@@ -101,3 +101,32 @@ header nav {
       color: #bdbdbd;
     }
   }
+
+ .group {
+    /* Changes the display property from its default to `flex`. */
+    display: flex;
+    /* Centers an element defined as `display: flex`. */
+    flex-direction: column;
+   }
+
+   .item {
+    flex: 1;
+    margin: 5px;
+    width: 100%; /* Make the items take full width */
+    padding: 10px; /* Add padding for a larger feel */
+    font-size: 16px; /* Increase font size */
+}
+
+
+   @media all and (min-width: 600px) {
+    group {
+      /* Changes the default setting from `block` to `flex`. */
+      display: flex;
+      /* Pushes the items (the title and nav) to the far sides of the 
+         browser with space between them. */
+      justify-content: space-between;
+      /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
+         left and right. */
+      padding: 0 30px;
+    }
+}
